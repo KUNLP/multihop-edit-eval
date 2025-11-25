@@ -50,5 +50,8 @@ def make_input_prompt(knowledge_edits, knowledge_chain, thoughts, type=None):
     if type is 'distortion':
         prompt = f"# Knowledge Chain:\n{knowledge_chain}\n\n# Post-Edit Reasoning Path\n{thoughts}"
     else:
-        prompt = f"# Knowledge Edits:\n{knowledge_edits}\n\n# Post-Edit Reasoning Path\n{thoughts}"
+        prompt = (
+            f"# Knowledge Edits:\n{knowledge_edits}\n\n"
+            f"# Post-Edit Reasoning Path\n{thoughts}"
+        )
     return prompt
