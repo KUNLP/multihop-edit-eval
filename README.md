@@ -1,11 +1,7 @@
 # Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models
 
 Official code for the CIKM 2025 paper:  
-**Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models**
-
-## Paper
-
-📄 [Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models (CIKM 2025)](https://dl.acm.org/doi/10.1145/3746252.3760840)
+[Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models (CIKM 2025)](https://dl.acm.org/doi/10.1145/3746252.3760840)
 
 ## Directory Structure
 
