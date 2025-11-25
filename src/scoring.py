@@ -12,7 +12,6 @@ def extract_true_false(content):
     matches = re.findall(pattern, content)
     return matches
 
-
 # Function to evaluate alignment based on the rules provided
 def check_alignment(result_list, target_length):
     return len(result_list) == target_length
@@ -66,4 +65,5 @@ for model_name in model_names:
     print(f"Model: {model_name}")
     for error_type in error_types:
         print(f"Error Type: {error_type}, Score: {scores[model_name][error_type]*100:.2f}")
+
 
