@@ -56,4 +56,15 @@ Official code for the CIKM 2025 paper:
 
 ---
 
-If you use this framework in your work, please cite our paper. Thank you!
+## Citation
+
+If you use this framework in your research, please cite the following paper:
+
+```bibtex
+@inproceedings{jeong2025watch,
+  author       = {Geunyeong Jeong and Juoh Sun and Harksoo Kim},
+  title        = {Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models},
+  booktitle    = {Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM)},
+  year         = {2025},
+  doi          = {10.1145/3746252.3760840}
+}
