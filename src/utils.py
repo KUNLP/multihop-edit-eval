@@ -11,7 +11,6 @@ def save_data(path, data):
     with open(path, 'w') as f:
         json.dump(data, f, indent=4)
 
-
 def parse_elements(item):
     knowledge_chain = '\n'.join([f'{idx+1}. ('+', '.join(hop)+')' for idx, hop in enumerate(item["orig"]["new_triples_labeled"])])
     
