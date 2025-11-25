@@ -7,6 +7,7 @@ error_types = ['persistence', 'mismatch', 'distortion']
 
 # Function to extract "True" and "False" results from the assistant's output
 def extract_true_false(content):
+    """Extracts True/False markers from response text."""
     # Regex to capture lines with Result: True or Result: False
     pattern = r"Result:\s*(True|False)"
     matches = re.findall(pattern, content)
@@ -71,4 +72,5 @@ for model_name in model_names:
     print(f"Model: {model_name}")
     for error_type in error_types:
         print(f"Error Type: {error_type}, Score: {scores[model_name][error_type]*100:.2f}")
+
 
