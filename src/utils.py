@@ -8,7 +8,7 @@ def load_data(path):
 
 def save_data(path, data):
     # save json file
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 def parse_elements(item):
