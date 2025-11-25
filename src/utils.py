@@ -34,7 +34,7 @@ def parse_elements(item):
         relation = relation_dict[rewrite['relation_id']]
         
         if (relation is None):
-            raise Exception
+            raise ValueError("Relation label not found")
         
         target_true = rewrite['target_true']['str']
         target_new = rewrite['target_new']['str']
