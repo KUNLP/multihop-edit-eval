@@ -1,7 +1,11 @@
 # Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models
 
-Official code for the **CIKM 2025 paper**:
-**"Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models"**
+Official code for the CIKM 2025 paper:  
+**Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models**
+
+## Paper
+
+📄 [Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models (CIKM 2025)](https://dl.acm.org/doi/10.1145/3746252.3760840)
 
 ## Directory Structure
 
@@ -34,12 +38,13 @@ Official code for the **CIKM 2025 paper**:
    - This will generate batch input files in the `input/` directory for each model and error type.
 
 3. **Call OpenAI Batch API**
-   - Upload the generated batch jsonl files to the [OpenAI Platform Batch API](https://platform.openai.com/batches) and request evaluation with GPT-4o.
-   - Refer to the [OpenAI documentation](https://platform.openai.com/docs/guides/batch) for details.
+   - Upload the generated batch jsonl files to the OpenAI Platform Batch API and request evaluation with GPT-4o.
+   - Refer to the OpenAI Batch documentation.
 
 4. **Save API Results**
    - Download the evaluation results from OpenAI and save them in the `output/` directory.
-   - Example filename: `output/{model_name}/rome_{model_name}_mquake_{error_type}_batch_output_sample.jsonl`
+   - Example filename:  
+     `output/{model_name}/rome_{model_name}_mquake_{error_type}_batch_output_sample.jsonl`
    - Each line should include the evaluation query, model response, and GPT-4o's evaluation (score, reasoning, etc).
 
 5. **Scoring**
@@ -50,3 +55,5 @@ Official code for the **CIKM 2025 paper**:
    - The script will print the scores for each model and error type.
 
 ---
+
+If you use this framework in your work, please cite our paper. Thank you!
