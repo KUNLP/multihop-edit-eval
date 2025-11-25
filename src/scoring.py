@@ -27,7 +27,7 @@ scores = {
 
 for model_name in model_names:
     # Step 2: Read the JSON file (containing case_id and rewrites)
-    data_path = f'../editing_results/rome_{model_name}_mquake_sample.json'  # Path to the JSON file
+    data_path = fr'../editing_results/rome_{model_name}_mquake_sample.json'  # Path to the JSON file
     with open(data_path, 'r') as f:
         data = json.load(f)
     
@@ -72,5 +72,6 @@ for model_name in model_names:
     print(f"Model: {model_name}")
     for error_type in error_types:
         print(f"Error Type: {error_type}, Score: {scores[model_name][error_type]*100:.2f}")
+
 
 
