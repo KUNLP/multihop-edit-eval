@@ -44,7 +44,7 @@ def parse_elements(item):
     
     knowledge_edits = '\n'.join(new_premise)
 
-    return knowledge_chain, knowledge_edits
+    return knowledge_edits, knowledge_chain
 
 def make_input_prompt(knowledge_edits, knowledge_chain, thoughts, type=None):
     if type is 'distortion':
