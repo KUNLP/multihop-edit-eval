@@ -16,7 +16,13 @@ def extract_true_false(content):
 def check_alignment(result_list, target_length):
     return len(result_list) == target_length
 
-scores = {model_name: {error_type: {}} for model_name in model_names for error_type in error_types}
+scores = {
+    model_name: {
+        error_type: {}
+        for error_type in error_types
+    }
+    for model_name in model_names
+}
 
 for model_name in model_names:
     # Step 2: Read the JSON file (containing case_id and rewrites)
@@ -65,3 +71,4 @@ for model_name in model_names:
     print(f"Model: {model_name}")
     for error_type in error_types:
         print(f"Error Type: {error_type}, Score: {scores[model_name][error_type]*100:.2f}")
+
