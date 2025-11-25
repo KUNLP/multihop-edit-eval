@@ -6,7 +6,6 @@ def load_data(path):
         data = json.load(file)
     return data
 
-
 def save_data(path, data):
     # save json file
     with open(path, 'w') as f:
