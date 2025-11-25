@@ -50,7 +50,10 @@ for model_name in model_names:
         for item in outputs:
             content = item['response']['body']['choices'][0]['message']['content']
             parsed_results = extract_true_false(content)
-            parsed_results = [True if item=='True' else False for item in parsed_results]
+            parsed_results = [
+                True if item == 'True' else False
+                for item in parsed_results
+            ]
             
             case_id = int(item['custom_id'].split('-')[1])
             # Calculate and store average scores for this case
@@ -72,6 +75,7 @@ for model_name in model_names:
     print(f"Model: {model_name}")
     for error_type in error_types:
         print(f"Error Type: {error_type}, Score: {scores[model_name][error_type]*100:.2f}")
+
 
 
 
