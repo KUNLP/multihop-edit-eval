@@ -1,5 +1,7 @@
 # Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models
 
+This repository provides a fine-grained evaluation framework designed to assess how well multi-hop knowledge edits are integrated into the reasoning process of large language models. It measures not only the correctness of final answers but also the consistency of entity-level reasoning after knowledge editing.
+
 Official code for the CIKM 2025 paper:  
 [Watch Your Step: A Fine-Grained Evaluation Framework for Multi-hop Knowledge Editing in Large Language Models (CIKM 2025)](https://dl.acm.org/doi/10.1145/3746252.3760840)
 
