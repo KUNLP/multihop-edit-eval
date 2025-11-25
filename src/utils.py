@@ -33,7 +33,7 @@ def parse_elements(item):
         subject = rewrite['subject']
         relation = relation_dict[rewrite['relation_id']]
         
-        if relation is None:
+        if (relation is None):
             raise Exception
         
         target_true = rewrite['target_true']['str']
