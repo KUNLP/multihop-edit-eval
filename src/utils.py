@@ -9,7 +9,7 @@ def load_data(path):
 def save_data(path, data):
     # save json file
     with open(path, 'w') as f:
-        json.dump(data, f, indent=4)
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
 def parse_elements(item):
     knowledge_chain = '\n'.join([f'{idx+1}. ('+', '.join(hop)+')' for idx, hop in enumerate(item["orig"]["new_triples_labeled"])])
