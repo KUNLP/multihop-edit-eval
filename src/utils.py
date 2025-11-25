@@ -47,7 +47,7 @@ def parse_elements(item):
     return (knowledge_edits, knowledge_chain)
 
 def make_input_prompt(knowledge_edits, knowledge_chain, thoughts, type=None):
-    if type=='distortion':
+    if type is 'distortion':
         prompt = f"# Knowledge Chain:\n{knowledge_chain}\n\n# Post-Edit Reasoning Path\n{thoughts}"
     else:
         prompt = f"# Knowledge Edits:\n{knowledge_edits}\n\n# Post-Edit Reasoning Path\n{thoughts}"
